@@ -3,6 +3,7 @@ import NavigateContainer from './NavigateContainer'
 
 export default function AddOnsContainer({isMobile,currentStage,setCurrentStage,addOns,setAddOns,planDuration}) {
 
+  
   useEffect(() => {
     addOns.forEach(addOns => {
 

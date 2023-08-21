@@ -98,6 +98,14 @@ hr {
   font-family: 'Times New Roman', Times, serif;
 }
 
+.step_active {
+  background-color: rgb(0, 0, 0);
+}
+
+.step_complete {
+  background-color: rgb(0, 255, 51);
+}
+
 .field_container {
   display: flex;
   flex-direction: column;

@@ -1,7 +1,7 @@
 import React from 'react'
 import ThankYouIcon from "../assets/images/icon-thank-you.svg"
 
-export default function ThankYouContainer(isMobile,currentStage,setCurrentStage) {
+export default function ThankYouContainer() {
   return (
     <div className="thankyou_container">
           <img className='thankyouicon' src={ThankYouIcon} alt="" />

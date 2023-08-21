@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import FormProgress from './FormProgress'
-import NavigateContainer from './NavigateContainer'
 import FormContainer from './FormContainer'
 import PlansContainer from './PlansContainer'
 import AddOnsContainer from './AddOnsContainer'
@@ -15,29 +14,6 @@ export default function MainContainer({isMobile,currentStage,setCurrentStage,pla
   const [selectedPlan, setSelectedPlan] = useState("arcade")
   const [addOns,setAddOns] = useState([])
 
-
-
-  useEffect(() => {
-
-    let stepElements = document.querySelectorAll(".step")
-    
-   stepElements.forEach(element => {
-    if(Number(element.innerHTML) === currentStage) {
-
-      if(currentStage === 5) {
-        element.style.backgroundColor = "rgb(0, 255, 51)"
-      } else {
-        element.style.backgroundColor = "rgb(0, 0, 0)"
-      }
-
-      
-      console.log(element.innerHTML)
-    } else {
-      element.style.backgroundColor = "transparent"
-    }
-  });
-   
-  },[currentStage])
 
 
   return (

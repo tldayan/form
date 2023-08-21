@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import NavigateContainer from './NavigateContainer'
+
 
 export default function SummaryContainer({isMobile,currentStage,setCurrentStage,selectedPlan,planDuration,addOns}) {
   
